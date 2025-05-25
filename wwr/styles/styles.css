@@ -33,6 +33,8 @@ body {
     font-family: 'Alkalami', serif;
 }
 header {
+    align-items: center;
+    padding: 20px 0;
     background-color: #2b2d42;
     color: #edf2f4;
 }
@@ -83,11 +85,14 @@ h4 {
 }
 #hero-img {
     width: 100%;
-    max-width: 100px;
 }
 footer p a:hover {
     text-decoration: underline;
 }
 footer a:hover {
     color: #ef233c;
+}
+.join-section {
+    background-color: #2b2d42;
+    color:  #edf2f4;
 }
