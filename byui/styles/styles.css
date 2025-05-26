@@ -10,6 +10,10 @@ a {
     color: white;
     margin: 40px;
 }
+a :hover {
+    background-color: white;
+    color: steelblue;
+}
 h1 {
     color: steelblue;
 }
@@ -27,6 +31,10 @@ footer {
     background-color: steelblue;
     color: white;
 }
+footer p {
+    font-size: 20px;
+    margin: 20px auto;
+}
 .main-para {
     font-size: 1.5em;
     line-height: 1,5em;
@@ -37,6 +45,9 @@ footer {
 }
 nav, footer {
     text-align: center;
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
 }
 main p {
     width: 80%;
