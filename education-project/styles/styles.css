@@ -1,0 +1,67 @@
+body {
+    background-color: #6DB6E7;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: black;
+}
+.quote-container {
+    padding: 20px;
+}
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    transition: 0.3 ease;
+}
+.title:hover {
+    color: black;
+}
+.quote-small {
+    font-size: 0.95rem;
+    color: white;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.quote-author {
+    font-weight: bold;
+    color: white;
+    margin: 10px 0 20px 0;
+}
+.steps {
+    list-style-type: decimal;
+    padding-left: 0;
+    margin: 0 auto 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    text-align: left;
+}
+.nelson-img {
+    width: 200px;
+    display: block;
+    height: auto;
+    margin: 10px auto;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+.big-quote {
+    font-size: 1.4rem;
+    font-style: italic;
+    color: white;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 600px;
+}
+.footer-text {
+    font-size: 0.9rem;
+    color: black;
+    margin-top: 20px;
+}
+.content-center {
+    text-align: center;
+}
+.center-block {
+    display: inline-block;
+    text-align: left;
+}
