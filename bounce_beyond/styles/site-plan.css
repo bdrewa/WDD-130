@@ -137,9 +137,7 @@ nav a:hover {
     "page2 page2 . . page3 page3";
 }
 .sitemap > div {
-
   text-align: center;
-
 }
 .sm-home {
   grid-area: home;
@@ -172,4 +170,10 @@ nav a:hover {
   grid-area: right;
   border-top: 1px solid;
   border-right: 1px solid;
+}
+img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 8px;
 }
