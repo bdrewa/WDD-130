@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bounce and Beyond | Booking</title>
-    <link rel="stylesheet" href="styles/styles.css">
+     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bounce and Beyond | Booking & Contact</title>
+    <link rel="stylesheet" href="styles/styles.css" />
 </head>
 <body>
     <header>
@@ -12,44 +12,46 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="rental_services.html">Our Services</a></li>
-                <li><a href="booking_page.html">Booking with Us</a></li>
+                <li><a href="booking_page.html" aria-current="page">Booking &amp; Contact</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section>
             <h1>What We Offer</h1>
             <p>
                 At Bounce and Beyond, we specialize in creating fun, flexible, and functional event experiences for all ages. Our rental options include two bounce castles to suit different event needs. We offer a small bounce house perfect for backyards, toddlers, or more casual gatherings and a large, commercial-grade inflatable ideal for bigger parties, school events, and community festivals. Both are cleaned and inspected after every use for your safety and peace of mind.
-                <br><br>
+                <br /><br />
                 But we don't stop there. We're expanding our services to include full wedding equipment rentals and professional DJ services. If you're planning a wedding and need tables, chairs, arches, lighting, or decor, we have curated options to help you create a beautiful setup without the hefty price tag. We want to bring the same ease and joy to your special day as we do to our bounce house rentals.
-                <br><br>
+                <br /><br />
                 And for the ultimate party experience, you can now book our wedding DJ service for just $500. We offer a complete sound system, curated playlists, event coordination, and an energetic host to keep the celebration going. Whether you need soft background music or a packed dance floor, we're ready to help bring your vision to life. No matter what you're celebrating, we're here to make it special.
             </p>
-            <img src="images/small_bounce.jpg" alt="Small bounce house for backyard parties">
-            <img src="images/kids_jump.jpg" alt="Kids jumping in bounce house">
-            <img src="images/commercial_bounce.jpg" alt="Large commercial bounce house">
+
+            <img src="images/small_bounce.jpg" alt="Small bounce house for backyard parties" />
+            <img src="images/kids_jump.jpg" alt="Kids jumping in bounce house" />
+            <img src="images/commercial_bounce.jpg" alt="Large commercial bounce house" />
 
             <h2>Request a Rental Quote</h2>
             <form action="https://formspree.io/f/mzzvbpbr" method="POST">
                 <div>
                     <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
+                    <input type="text" id="name" name="name" required />
                 </div>
                 
                 <div>
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                    <input type="email" id="email" name="email" required />
                 </div>
                 
                 <div>
                     <label for="phone">Phone:</label>
-                    <input type="tel" id="phone" name="phone">
+                    <input type="tel" id="phone" name="phone" />
                 </div>
                 
                 <div>
                     <label for="event-date">Event Date:</label>
-                    <input type="date" id="event-date" name="event-date" required>
+                    <input type="date" id="event-date" name="event-date" required />
                 </div>
                 
                 <div>
@@ -63,14 +65,33 @@
                         <option value="multiple">Multiple Services</option>
                     </select>
                 </div>
+
                 <div>
                     <label for="message">Additional Details:</label>
-                     <textarea id="message" name="message" rows="5" placeholder="Tell us about your event, number of guests, location, etc."></textarea>
+                    <textarea id="message" name="message" rows="5" placeholder="Tell us about your event, number of guests, location, etc."></textarea>
                 </div>
+
                 <button type="submit">Submit Rental Inquiry</button>
             </form>
         </section>
+
+        <section>
+            <h2>Other Ways to Contact Us</h2>
+
+            <a href="tel:+0000000000" class="button-link" aria-label="Contact us by phone">
+                Contact Us by Phone: (000) 000-0000
+            </a>
+
+            <p>Or reach out to us on social media:</p>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="button-link" aria-label="Contact us on Instagram via direct message">
+                Instagram
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="button-link" aria-label="Contact us on Facebook via direct message">
+                Facebook
+            </a>
+        </section>
     </main>
+
     <footer>
         <p><a href="site-plan.html">View Site Plan</a></p>
         <p>&copy; 2025 Bounce and Beyond</p>
