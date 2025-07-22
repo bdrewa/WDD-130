@@ -614,6 +614,181 @@ footer {
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
+.services-page .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(5, 200px);
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.services-page .service-category {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid #333;
+    background-color: white;
+}
+
+.services-page .service-content h3 {
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+}
+
+body:has(.services-grid) .services-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: repeat(5, 200px);
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 1200px;
+    padding: 0 2rem;
+}
+
+body:has(.services-grid) .service-card {
+    grid-column: 2; /* Force all cards to center column */
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+body:has(.services-grid) .service-card h3 {
+    border: 1px solid #333;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+    font-family: 'Fredoka One', cursive;
+}
+
+body:has(.services-grid) h2 {
+    text-align: center;
+    margin: 2rem 0;
+    font-family: 'Fredoka One', cursive;
+    font-size: 2.5rem;
+    color: #4a90e2;
+}
+
+body:has(.services-grid) .service-image-left,
+body:has(.services-grid) .service-image-right {
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+body:has(.services-grid) .service-image-left {
+    grid-column: 1;
+}
+
+body:has(.services-grid) .service-image-right {
+    grid-column: 3;
+}
+
+body:has(.services-grid) .service-image-left img,
+body:has(.services-grid) .service-image-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+body:has(.services-grid) .service-image-left,
+body:has(.services-grid) .service-image-right {
+    border: 2px solid #333;
+    background-color: white;
+    border-radius: 8px;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: visible;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+body:has(.services-grid) .service-image-left:hover,
+body:has(.services-grid) .service-image-right:hover {
+    transform: scale(1.02);
+}
+
+body:has(.services-grid) .service-image-left {
+    grid-column: 1;
+}
+
+body:has(.services-grid) .service-image-right {
+    grid-column: 3;
+}
+
+body:has(.services-grid) .service-image-left img,
+body:has(.services-grid) .service-image-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+/* Pricing tooltip styles */
+.pricing-tooltip {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.98);
+    border: 2px solid #4a90e2;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    min-width: 200px;
+    text-align: center;
+    backdrop-filter: blur(5px);
+}
+
+.service-image-left:hover .pricing-tooltip,
+.service-image-right:hover .pricing-tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%) scale(1.02);
+}
+
+.pricing-tooltip h4 {
+    font-family: 'Fredoka One', cursive;
+    color: #4a90e2;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.pricing-tooltip p {
+    color: #333;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
     nav {
@@ -662,5 +837,34 @@ footer {
     
     .services-grid {
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .services-page .services-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+    
+    .services-page .service-category {
+        grid-column: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    body:has(.services-grid) .service-image-left,
+    body:has(.services-grid) .service-image-right {
+        display: none;
+    }
+    
+    .pricing-tooltip {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    body:has(.services-grid) .service-image-left,
+    body:has(.services-grid) .service-image-right {
+        display: none;
     }
 }
