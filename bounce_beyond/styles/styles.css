@@ -106,24 +106,28 @@ main {
     margin-bottom: 3rem;
     border-radius: 12px;
 }
+
 .hero-center {
     text-align: center;
     margin: 4rem auto 3rem auto;
     max-width: 600px;
     padding: 0 1rem;
 }
+
 .hero h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 3rem;
     margin-bottom: 1rem;
     text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
 }
+
 .hero-logo {
     max-width: 800px;
     height: auto;
     margin: 0 auto;
     display: inline-block;
 }
+
 .hero .tagline {
     font-size: 1.2rem;
     font-weight: 300;
@@ -169,18 +173,6 @@ main {
     transform: translateY(-5px);
 }
 
-.service-image {
-    width: 100%;
-    height: 200px;
-    background-color: #f0f0f0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-style: italic;
-    color: #666;
-    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
-}
-
 .service-content {
     padding: 1.5rem;
     text-align: center;
@@ -215,16 +207,6 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.large-service-image {
-    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-style: italic;
-    color: #666;
-    min-height: 200px;
 }
 
 .large-service h3 {
@@ -416,18 +398,6 @@ footer {
     text-align: center;
 }
 
-.home-hero .hero-logo-placeholder {
-    height: 150px;
-    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
-    border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-style: italic;
-    color: #666;
-    margin-bottom: 2rem;
-}
-
 .home-hero h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 2.5rem;
@@ -474,18 +444,14 @@ footer {
     text-align: center;
 }
 
-.home-service-card:hover {
-    transform: translateY(-5px);
+.home-service-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 }
 
-.home-service-image {
-    height: 150px;
-    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-style: italic;
-    color: #666;
+.home-service-card:hover {
+    transform: translateY(-5px);
 }
 
 .home-service-content {
@@ -551,14 +517,21 @@ footer {
 }
 
 .home-large-service-image {
-    background: linear-gradient(45deg, #f0f0f0, #e0e0e0);
+    height: 200px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-style: italic;
-    color: #666;
-    min-height: 200px;
 }
+
+.home-large-service-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+
 .home-content {
     background: white;
     border-radius: 12px;
