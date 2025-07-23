@@ -8,14 +8,14 @@
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #000000;
+    background-color: #F5F5F5;
 }
 
 /* Header and Navigation */
 header {
-    background-color: white;
-    border-bottom: 2px solid #e0e0e0;
+    background-color: #FFFFFF;
+    border-bottom: 2px solid #F5F5F5;
     padding: 1rem 0;
     position: sticky;
     top: 0;
@@ -35,10 +35,10 @@ nav {
 .logo {
     font-family: 'Fredoka One', cursive;
     font-size: 1.5rem;
-    color: #4a90e2;
+    color: #D72638;
     text-decoration: none;
     padding: 0.6rem 1.2rem;
-    border: 2px solid #4a90e2;
+    border: 2px solid #D72638;
     border-radius: 8px;
     display: inline-block;
     text-align: center;
@@ -61,7 +61,7 @@ nav ul {
 
 nav a {
     text-decoration: none;
-    color: #333;
+    color: #000000;
     font-weight: 500;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -70,13 +70,13 @@ nav a {
 
 nav a:hover,
 nav a[aria-current="page"] {
-    background-color: #4a90e2;
-    color: white;
+    background-color: #D72638;
+    color: #FFFFFF;
 }
 
 .get-quote-btn {
-    background-color: #28a745;
-    color: white !important;
+    background-color: #FFD700;
+    color: #000000 !important;
     padding: 0.75rem 1.5rem;
     border-radius: 6px;
     font-weight: bold;
@@ -85,7 +85,8 @@ nav a[aria-current="page"] {
 }
 
 .get-quote-btn:hover {
-    background-color: #218838;
+    background-color: #D72638;
+    color: #FFFFFF !important;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -101,8 +102,8 @@ main {
 .hero {
     text-align: center;
     padding: 4rem 0;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: #D72638;
+    color: #FFFFFF;
     margin-bottom: 3rem;
     border-radius: 12px;
 }
@@ -135,8 +136,8 @@ main {
 }
 
 .browse-btn {
-    background-color: white;
-    color: #667eea;
+    background-color: #FFFFFF;
+    color: #D72638;
     padding: 1rem 2rem;
     border: none;
     border-radius: 8px;
@@ -162,7 +163,7 @@ main {
 }
 
 .service-category {
-    background: white;
+    background: #FFFFFF;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -182,11 +183,11 @@ main {
     font-family: 'Fredoka One', cursive;
     font-size: 1.3rem;
     margin-bottom: 0.5rem;
-    color: #4a90e2;
+    color: #D72638;
 }
 
 .service-content p {
-    color: #666;
+    color: #000000;
     line-height: 1.5;
 }
 
@@ -196,7 +197,7 @@ main {
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
     margin: 3rem 0;
-    background: white;
+    background: #FFFFFF;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -213,13 +214,13 @@ main {
     font-family: 'Fredoka One', cursive;
     font-size: 1.8rem;
     margin-bottom: 1rem;
-    color: #4a90e2;
+    color: #D72638;
 }
 
 /* Contact page styles */
 .contact-hero {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    color: white;
+    background: #D72638;
+    color: #FFFFFF;
     padding: 3rem;
     border-radius: 12px;
     margin-bottom: 3rem;
@@ -227,7 +228,7 @@ main {
 }
 
 .gallery-scroller {
-    background: white;
+    background: #FFFFFF;
     border-radius: 12px;
     padding: 2rem;
     margin-bottom: 3rem;
@@ -237,9 +238,9 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+    background: #F5F5F5;
     font-style: italic;
-    color: #666;
+    color: #000000;
     font-size: 1.2rem;
 }
 
@@ -250,9 +251,9 @@ main {
 }
 
 .contact-btn {
-    background: white;
-    border: 2px solid #4a90e2;
-    color: #4a90e2;
+    background: #FFFFFF;
+    border: 2px solid #D72638;
+    color: #D72638;
     padding: 1rem 2rem;
     border-radius: 8px;
     text-decoration: none;
@@ -263,8 +264,8 @@ main {
 }
 
 .contact-btn:hover {
-    background-color: #4a90e2;
-    color: white;
+    background-color: #D72638;
+    color: #FFFFFF;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -277,8 +278,8 @@ main {
 }
 
 .social-btn {
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    color: white;
+    background: #D72638;
+    color: #FFFFFF;
     padding: 0.75rem 1rem;
     border-radius: 8px;
     text-decoration: none;
@@ -288,13 +289,14 @@ main {
 }
 
 .social-btn:hover {
+    background: #000000;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.3);
 }
 
 /* Form styles */
 .contact-form {
-    background: white;
+    background: #FFFFFF;
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -303,7 +305,7 @@ main {
 
 .contact-form h2 {
     font-family: 'Fredoka One', cursive;
-    color: #4a90e2;
+    color: #D72638;
     margin-bottom: 1.5rem;
     text-align: center;
 }
@@ -316,7 +318,7 @@ main {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: bold;
-    color: #333;
+    color: #000000;
 }
 
 .form-group input,
@@ -324,7 +326,7 @@ main {
 .form-group textarea {
     width: 100%;
     padding: 0.75rem;
-    border: 2px solid #e0e0e0;
+    border: 2px solid #F5F5F5;
     border-radius: 6px;
     font-size: 1rem;
     transition: border-color 0.3s ease;
@@ -334,12 +336,12 @@ main {
 .form-group select:focus,
 .form-group textarea:focus {
     outline: none;
-    border-color: #4a90e2;
+    border-color: #D72638;
 }
 
 .submit-btn {
-    background: linear-gradient(135deg, #28a745, #20c997);
-    color: white;
+    background: #FFD700;
+    color: #000000;
     padding: 1rem 2rem;
     border: none;
     border-radius: 8px;
@@ -351,14 +353,16 @@ main {
 }
 
 .submit-btn:hover {
+    background: #D72638;
+    color: #FFFFFF;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.2);
 }
 
 /* Footer */
 footer {
-    background-color: #333;
-    color: white;
+    background-color: #000000;
+    color: #FFFFFF;
     text-align: center;
     padding: 2rem;
     margin-top: 4rem;
@@ -375,22 +379,22 @@ footer {
 .footer-section h3 {
     font-family: 'Fredoka One', cursive;
     margin-bottom: 1rem;
-    color: #4a90e2;
+    color: #D72638;
 }
 
 .footer-section a {
-    color: white;
+    color: #FFFFFF;
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .footer-section a:hover {
-    color: #4a90e2;
+    color: #FFD700;
 }
 
 /* Home page specific styles */
 .home-hero {
-    background: white;
+    background: #FFFFFF;
     border-radius: 12px;
     padding: 3rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -401,19 +405,19 @@ footer {
 .home-hero h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 2.5rem;
-    color: #4a90e2;
+    color: #D72638;
     margin-bottom: 1rem;
 }
 
 .home-hero p {
     font-size: 1.2rem;
-    color: #666;
+    color: #000000;
     margin-bottom: 2rem;
 }
 
 .home-hero .browse-btn {
-    background-color: #4a90e2;
-    color: white;
+    background-color: #D72638;
+    color: #FFFFFF;
     padding: 1rem 2rem;
     border-radius: 8px;
     font-weight: bold;
@@ -423,7 +427,7 @@ footer {
 }
 
 .home-hero .browse-btn:hover {
-    background-color: #3a7bd5;
+    background-color: #000000;
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
@@ -436,7 +440,7 @@ footer {
 }
 
 .home-service-card {
-    background: white;
+    background: #FFFFFF;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -461,12 +465,12 @@ footer {
 .home-service-content h3 {
     font-family: 'Fredoka One', cursive;
     font-size: 1.3rem;
-    color: #4a90e2;
+    color: #D72638;
     margin-bottom: 0.5rem;
 }
 
 .home-service-content p {
-    color: #666;
+    color: #000000;
     line-height: 1.5;
 }
 
@@ -476,7 +480,7 @@ footer {
 }
 
 .home-large-service {
-    background: white;
+    background: #FFFFFF;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -507,12 +511,12 @@ footer {
 .home-large-service-content h3 {
     font-family: 'Fredoka One', cursive;
     font-size: 1.8rem;
-    color: #4a90e2;
+    color: #D72638;
     margin-bottom: 1rem;
 }
 
 .home-large-service-content p {
-    color: #666;
+    color: #000000;
     line-height: 1.6;
 }
 
@@ -531,9 +535,8 @@ footer {
     object-position: center;
 }
 
-
 .home-content {
-    background: white;
+    background: #FFFFFF;
     border-radius: 12px;
     padding: 3rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -543,7 +546,7 @@ footer {
 .home-content h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 2.5rem;
-    color: #4a90e2;
+    color: #D72638;
     margin-bottom: 2rem;
     text-align: center;
 }
@@ -552,7 +555,7 @@ footer {
     font-size: 1.1rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
-    color: #555;
+    color: #000000;
 }
 
 .home-content img {
@@ -566,7 +569,7 @@ footer {
 
 /* Services page specific styles */
 .services-intro {
-    background: white;
+    background: #FFFFFF;
     border-radius: 12px;
     padding: 2rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -577,7 +580,7 @@ footer {
 .services-intro h1 {
     font-family: 'Fredoka One', cursive;
     font-size: 2.5rem;
-    color: #4a90e2;
+    color: #D72638;
     margin-bottom: 1rem;
 }
 
@@ -587,16 +590,16 @@ footer {
 }
 
 .services-list li {
-    background: white;
+    background: #FFFFFF;
     margin-bottom: 1rem;
     padding: 1rem;
     border-radius: 8px;
-    border-left: 4px solid #4a90e2;
+    border-left: 4px solid #D72638;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .services-list strong {
-    color: #4a90e2;
+    color: #D72638;
 }
 
 .services-images {
@@ -629,15 +632,15 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border: 2px solid #333;
-    background-color: white;
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
 }
 
 .services-page .service-content h3 {
-    border: 1px solid #333;
+    border: 1px solid #000000;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: #F5F5F5;
     margin-bottom: 1rem;
 }
 
@@ -653,8 +656,8 @@ body:has(.services-grid) .services-grid {
 
 body:has(.services-grid) .service-card {
     grid-column: 2; /* Force all cards to center column */
-    border: 2px solid #333;
-    background-color: white;
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
     border-radius: 8px;
     padding: 1.5rem;
     display: flex;
@@ -666,10 +669,10 @@ body:has(.services-grid) .service-card {
 }
 
 body:has(.services-grid) .service-card h3 {
-    border: 1px solid #333;
+    border: 1px solid #000000;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: #F5F5F5;
     margin-bottom: 1rem;
     font-family: 'Fredoka One', cursive;
 }
@@ -679,13 +682,13 @@ body:has(.services-grid) h2 {
     margin: 2rem 0;
     font-family: 'Fredoka One', cursive;
     font-size: 2.5rem;
-    color: #4a90e2;
+    color: #D72638;
 }
 
 body:has(.services-grid) .service-image-left,
 body:has(.services-grid) .service-image-right {
-    border: 2px solid #333;
-    background-color: white;
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
     border-radius: 8px;
     padding: 0.5rem;
     display: flex;
@@ -713,8 +716,8 @@ body:has(.services-grid) .service-image-right img {
 
 body:has(.services-grid) .service-image-left,
 body:has(.services-grid) .service-image-right {
-    border: 2px solid #333;
-    background-color: white;
+    border: 2px solid #000000;
+    background-color: #FFFFFF;
     border-radius: 8px;
     padding: 0.5rem;
     display: flex;
@@ -755,7 +758,7 @@ body:has(.services-grid) .service-image-right img {
     left: 50%;
     transform: translate(-50%, -50%);
     background: rgba(255, 255, 255, 0.98);
-    border: 2px solid #4a90e2;
+    border: 2px solid #D72638;
     border-radius: 8px;
     padding: 1rem;
     box-shadow: 0 8px 16px rgba(0,0,0,0.3);
@@ -777,13 +780,13 @@ body:has(.services-grid) .service-image-right img {
 
 .pricing-tooltip h4 {
     font-family: 'Fredoka One', cursive;
-    color: #4a90e2;
+    color: #D72638;
     margin-bottom: 0.5rem;
     font-size: 1rem;
 }
 
 .pricing-tooltip p {
-    color: #333;
+    color: #000000;
     font-size: 0.9rem;
     line-height: 1.4;
     margin: 0;
