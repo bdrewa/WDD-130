@@ -26,16 +26,46 @@
   </header>
   <main>
     <section class="gallery-scroller">
-      <h2>Gallery Photo Scroller</h2>
-      <p>(Interactive image carousel showing past events and rental setups)</p>
-    </section>
-
+  <h2>Gallery Photo Scroller</h2>
+  <div class="carousel">
+    <input type="radio" name="carousel" id="slide1" checked>
+    <input type="radio" name="carousel" id="slide2">
+    <input type="radio" name="carousel" id="slide3">
+    <input type="radio" name="carousel" id="slide4">
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="slide">
+          <img src="images/event1.jpg" alt="Birthday party setup with bounce house">
+        </div>
+        <div class="slide">
+          <img src="images/event2.jpg" alt="Wedding reception with elegant decor">
+        </div>
+        <div class="slide">
+          <img src="images/event3.jpg" alt="Corporate event with DJ setup">
+        </div>
+        <div class="slide">
+          <img src="images/event4.jpg" alt="Large bounce house at outdoor event">
+        </div>
+      </div>
+    </div>
+    <div class="carousel-nav">
+      <label for="slide1" class="nav-dot"></label>
+      <label for="slide2" class="nav-dot"></label>
+      <label for="slide3" class="nav-dot"></label>
+      <label for="slide4" class="nav-dot"></label>
+    </div>
+    <div class="carousel-arrows">
+      <label for="slide4" class="arrow prev">‹</label>
+      <label for="slide2" class="arrow next">›</label>
+    </div>
+  </div>
+</section>
     <section class="contact-methods">
       <a href="mailto:info@bounceandbeyond.com?subject=Event Rental Inquiry" class="contact-btn">
         Contact us by Email
       </a>
 
-      <a href="tel:+1234567890" class="contact-btn">
+      <a href="tel:(XXX) XXX-XXXX" class="contact-btn">
         Contact us by Phone
       </a>
 
@@ -102,7 +132,7 @@
     <div class="footer-content">
       <div class="footer-section">
         <h3>Contact Info</h3>
-        <p>Phone: (000) 000-0000</p>
+        <p>Phone: (XXX) XXX-XXXX</p>
       </div>
       <div class="footer-section">
         <h3>Follow Us</h3>
