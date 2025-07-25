@@ -234,20 +234,190 @@ main {
     margin-bottom: 3rem;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
-    min-height: 300px;
+}
+
+.gallery-scroller h2 {
+    font-family: 'Fredoka One', cursive;
+    color: #D72638;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+/* Carousel Container */
+.carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.carousel-container,
+.carousel-track,
+.slide {
+    background: transparent;
+}
+
+/* Hide radio buttons */
+.carousel input[type="radio"] {
+    display: none;
+}
+
+/* Carousel container */
+.carousel-container {
+    width: 100%;
+    height: 400px; 
+    overflow: hidden;
+    position: relative;
+}
+
+/* Carousel track */
+.carousel-track {
+    display: flex;
+    width: 400%; 
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Individual slides */
+.slide {
+    width: 25%; 
+    height: 100%;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Carousel navigation dots */
+.carousel-nav {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.nav-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.nav-dot:hover {
+    background-color: #D72638;
+}
+
+/* Carousel arrows */
+.carousel-arrows {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    pointer-events: none;
+}
+
+.arrow {
+    background-color: rgba(215, 38, 56, 0.8);
+    color: white;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #F5F5F5;
-    font-style: italic;
-    color: #000000;
-    font-size: 1.2rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+    pointer-events: all;
+    user-select: none;
+}
+
+.arrow:hover {
+    background-color: rgba(215, 38, 56, 1);
+    transform: scale(1.1);
+}
+
+/* Slide transitions */
+#slide1:checked ~ .carousel-container .carousel-track {
+    transform: translateX(0%);
+}
+
+#slide2:checked ~ .carousel-container .carousel-track {
+    transform: translateX(-25%);
+}
+
+#slide3:checked ~ .carousel-container .carousel-track {
+    transform: translateX(-50%);
+}
+
+#slide4:checked ~ .carousel-container .carousel-track {
+    transform: translateX(-75%);
+}
+
+/* Active dot styling */
+#slide1:checked ~ .carousel-nav .nav-dot:nth-child(1),
+#slide2:checked ~ .carousel-nav .nav-dot:nth-child(2),
+#slide3:checked ~ .carousel-nav .nav-dot:nth-child(3),
+#slide4:checked ~ .carousel-nav .nav-dot:nth-child(4) {
+    background-color: #D72638;
+}
+
+/* Arrow navigation logic */
+
+.arrow {
+    display: none;
+}
+
+#slide1:checked ~ .carousel-arrows #slide1-prev,
+#slide1:checked ~ .carousel-arrows #slide1-next {
+    display: flex;
+}
+
+#slide2:checked ~ .carousel-arrows #slide2-prev,
+#slide2:checked ~ .carousel-arrows #slide2-next {
+    display: flex;
+}
+
+#slide3:checked ~ .carousel-arrows #slide3-prev,
+#slide3:checked ~ .carousel-arrows #slide3-next {
+    display: flex;
+}
+
+#slide4:checked ~ .carousel-arrows #slide4-prev,
+#slide4:checked ~ .carousel-arrows #slide4-next {
+    display: flex;
 }
 
 .contact-methods {
     display: grid;
     gap: 1rem;
     margin-bottom: 3rem;
+}
+
+.email-note {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #000000;
+}
+
+.phone-note {
+  text-align: center;
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+  color: #000000;
 }
 
 .contact-btn {
